@@ -1,3 +1,8 @@
+<?php
+    $salada = array("Maçã","Abacate","Laranja");
+
+?>
+
 <!doctype html>
 <html>
     <head>
@@ -6,5 +11,22 @@
     </head>
 
     <body>
+
+    <?php
+    echo $salada[0]. "</br>";
+    echo $salada[1]. "</br>";
+    echo $salada[2]. "</br>";
+    echo count($salada). "</br>";
+    $salada[] = "Kiwi";
+    echo count($salada). "</br>";
+    print_r($salada). "</br>";
+    ?>
+
+    <pre>
+        <?php
+        print_r($salada);
+        ?>
+    </pre>
+    
     </body>
 </html>
